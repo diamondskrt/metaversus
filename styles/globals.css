@@ -6,8 +6,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
+  font-family: 'Eudoxus Sans', sans-serif;
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: rgb(26 35 46 / 1);
+}
+
+.scroll-blocked {
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .scrollbar-offset {
+    padding-right: 17px;
+  }
+
+  .scroll-blocked {
+    padding-inline-end: 17px;
+  }
 }
 
 .gradient-01 {

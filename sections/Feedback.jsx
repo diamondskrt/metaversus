@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
@@ -39,21 +41,30 @@ const Feedback = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img
-          src="/img/planet-09.png"
-          alt="planet-09"
-          className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
-        />
+        <div className="w-full lg:h-[610px] h-auto min-h-[210px] relative">
+          <Image
+            src="/img/planet-09.png"
+            alt="planet-09"
+            fill
+            sizes="(max-width: 1200px) 100vw, 100vw"
+            className="object-cover rounded-[40px]"
+          />
+        </div>
 
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
-          <img
-            src="/img/stamp.png"
-            alt="stamp"
-            className="w-[155px] h-[155px] object-contain"
-          />
+          <div className="w-[155px] h-[155px] relative">
+            <Image
+              src="/img/stamp.png"
+              alt="stamp"
+              fill
+              sizes="(max-width: 1200px) 100vw, 100vw"
+              priority
+              className="object-contain"
+            />
+          </div>
         </motion.div>
       </motion.div>
     </motion.div>

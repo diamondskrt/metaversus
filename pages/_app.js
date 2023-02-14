@@ -5,7 +5,7 @@ import '../styles/globals.css';
 const MyApp = ({ Component, pageProps }) => (
   <>
     <Head>
-      <title>Metaversus</title>
+      <title>Metaverse</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link
         rel="apple-touch-icon"
@@ -84,10 +84,6 @@ const MyApp = ({ Component, pageProps }) => (
       />
       <meta name="theme-color" content="#ffffff" />
       <link rel="icon" href="/favicon.ico" />
-      <link
-        rel="stylesheet"
-        href="https://stijndv.com/fonts/Eudoxus-Sans.css"
-      />
     </Head>
     <Component {...pageProps} />
   </>

@@ -12,7 +12,7 @@ const Explore = () => {
   const [activeId, setActiveId] = useState(2);
 
   return (
-    <section className={`${styles.paddings}`} id="explore">
+    <section className={`${styles.paddings}`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
